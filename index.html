@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Juegos</title>
+        <link href="css/estilo.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>        
+        <!--IMAGEN HEADER-->
+        <header id="juegos">
+            <figure>
+                <img src="img/arcade-boton.png" class="principal" alt="fonde de pantalla arcade">
+				<img src="img/diddy_kong.png" class="right" alt="Imagen de juego">
+				<img src="img/Bomberman.png" class="left" alt="Imagen de juego">
+            </figure>
+            <h1>ARCADEs</h1>
+        </header>
+
+        <!--NAVEGADOR MENU-->
+        <nav id="navegacion">
+			<ul class="menu">
+				<li>
+					<a id="mario" href="#consola">
+						<img src="img/supermario.png" alt="" class="imagen">
+						<span class="text-item">Super Mario</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+				<li>
+					<a id="kong" href="#consola" onclick="jugar()">
+						<img src="img/diddy_kong.png" alt="" class="imagen">
+						<span class="text-item">Donkey Kong</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+				<li>
+					<a id="bomberman" href="#consola">
+						<img src="img/Bomberman.png" alt="" class="imagen">
+						<span class="text-item">Bomberman</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+				<li>
+					<a id="contra" href="#consola">
+						<img src="img/contra.png" alt="" class="imagen">
+						<span class="text-item">Contra 3</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+				<li>
+					<a id="pelea" href="#consola">
+						<img src="img/street_fighter.png" alt="" class="imagen">
+						<span class="text-item">Street Fighter</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+				<li>
+					<a id="autos" href="#consola">
+						<img src="img/top-gear.png" alt="" class="imagen">
+						<span class="text-item">Top Gear</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+        
+		<!--FUNCIONES JAVA SCRIPT-->
+		<script src="js/script.js"></script>
+        
+        <!--SECTION CONSOLA-->
+        <section>
+            <div class="left">
+				<div class="botones-superior">
+					<p>Q<span>L</span></p>
+					<p>E<span>R</span></p>
+				</div>
+
+				<div class="botones">
+					<p>A</p>
+					<p>S</p>
+					<p>Z</p>
+					<p>X</p>
+				</div>
+
+				<div class="botones-inferior">
+					<p>shift<span>/SELECT</span></p>
+					<p>enter<a href="#juegos"><span>/START</span></a></p>
+				</div>
+			</div>
+            <iframe src="" id="consola"></iframe>
+            
+			<div class="right">
+				<div class="direccion">
+					<span class="flecha"></span>
+					<span class="flecha"></span>
+					<span class="flecha"></span>
+					<span class="flecha"></span>
+				</div>
+			</div>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+            <h2>Telefono: 627880378</h2>
+
+            <figure>
+                <img src="img/Bomberman.png">
+            </figure>
+        </footer>
+    </body>
+</html>

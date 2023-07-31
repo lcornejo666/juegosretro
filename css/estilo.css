@@ -1,0 +1,370 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    list-style: none;
+	text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --altura: 90vh;
+    --botones: 50px;
+    --sombraboton:#837f7f 5px 7px 10px 0px;
+    --border-radius:50%;
+    --border-bottom: 6px rgb(12, 247, 247) solid;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+}
+
+header figure{
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+ }
+
+header figure .principal{
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    margin-top: -5%;
+    z-index: -1;
+}
+
+header figure .right{
+    position: absolute;
+    z-index: 1;
+    margin-left: 45%;
+}
+
+header figure .left{
+    position: absolute;
+    z-index: 1;
+    margin-left: 10%;
+}
+
+ header h1{
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 5px 5px rgb(226, 93, 3);
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(10, 25, 226);
+    animation-name: cambiodecolor;
+    animation-duration: 15s;
+ }
+
+@keyframes cambiodecolor{
+    20%   {color:red; top:0px; font-size: 3rem;}
+    35%  {color:yellow; top:0px; font-size: 4rem;}
+    50%  {color:blue; top:200px; font-size: 5rem;}
+}
+
+/*NAVEGACION*/
+#navegacion{
+	width: 80%;
+    margin: auto;
+	background: #02b8e6;
+}
+
+.menu{
+	width: 100%;
+    height: 10vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu li{
+	flex-basis: 0;
+	flex-grow: 1;
+	border-right: 1px solid #363636;
+	position: relative;
+    text-align: center;
+}
+
+.menu li a{
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.menu .imagen{
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	width: 0%;
+	z-index: 30;
+    -webkit-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -moz-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -o-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); /*easeInOutSine*/
+
+    -webkit-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -moz-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -o-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); /*easeInOutSine*/ 
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+}
+
+.menu li a .text-item{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	top: 0%;
+	position: absolute;
+	z-index: 10;
+
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /*older webkit*/ 
+    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /*easeOutBack*/
+
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /*older webkit*/ 
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /*easeOutBack*/
+}
+
+.menu li a .down-item{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background: #1C1C1C;
+
+	-webkit-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /*easeOutCubic*/
+
+-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /*easeOutCubic*/ 
+}
+
+.menu li:hover .down-item, .menu li:hover .text-item{
+	top: 100%;
+	height: 115%;
+}
+
+.menu li:hover .imagen{
+	width: 100%;
+	right: 0px;
+}
+
+/*SECTION*/
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+    overflow: hidden;
+    border-radius: 12%;
+    border-top: 10px black solid;
+    box-shadow: #837f7f 10px 15px 10px 0px;
+
+}
+
+/*CONSOLA DE JUEGOS*/
+section .left{
+    width: 15%;
+    height:var(--altura);
+    background-color: aqua;
+    display: grid;
+    align-content: space-evenly;
+}
+
+section .right{
+    width: 15%;
+    height:var(--altura);
+    background-color: rgb(238, 12, 61);
+    display: grid;
+    align-content: space-evenly;
+}
+
+section #consola{
+    width: 70%;
+    height:var(--altura);
+    background-color: black;
+    border-block-start-style: double;
+    border: 40px rgb(15, 15, 15) solid;
+}
+
+/*BOTONES CONSOLA DE JUEGOS LADO IZQUIERDO*/
+/*BOTENES SUPERIORES*/
+section .left .botones-superior{
+    text-align: center;
+}
+
+section .left .botones-superior p{
+    width: var(--botones);
+    height: var(--botones);
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 5%;
+    background-color: #1C1C1C;
+    color: #fbfeff;
+    box-shadow: var(--sombraboton)
+}
+
+section .left .botones-superior span{
+    font-size: 2.5rem;
+    color: #05baf7;
+}
+
+/*BOTENES DE ENMEDIO*/
+section .left .botones{
+    text-align: center;
+}
+
+section .left .botones p{
+    margin: auto;
+    width: var(--botones);
+    height: var(--botones);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #1C1C1C;
+    color: #02b8e6;
+    box-shadow: var(--sombraboton)
+}
+
+section .left .botones p:nth-child(2){
+    display: inline-block;
+    margin-right: 25%;
+}
+
+section .left .botones p:nth-child(3){
+    display: inline-block;
+}
+
+/*BOTENES INFERIORES*/
+section .left .botones-inferior{
+    text-align: center;
+}
+
+section .left .botones-inferior p{
+    display: block;
+    width: 90%;
+    height: 6vh;
+    display: inline-block;
+    border-radius: 20% 10%;
+    text-align: center;
+    margin: 10px 5%;
+    background-color: #1C1C1C;
+    color: #f8fbfc;
+    box-shadow: var(--sombraboton)
+}
+
+section .left .botones-inferior span{
+    font-size: 1.5rem;
+    color: #03fdfd;
+}
+
+section .left .botones-inferior a{
+    height: 7vh;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        font-size: 1.7rem;
+    }
+}
+
+/*BOTONES CONSOLA DE JUEGOS LADO DERECHO*/
+/*BOTONES DIRECCIONALES*/
+.right .direccion{
+    text-align: center;  
+    margin-right: 1%; 
+}
+
+.flecha{
+    width: 40%;
+    height: 10vh;
+    background-color: black;
+}
+
+.flecha:first-child{
+    display: block;
+    margin: auto;
+    border-top-left-radius:var(--border-radius);
+    border-top-right-radius:var(--border-radius);
+    border-top:var(--border-bottom);
+    margin-bottom: 8%;
+    box-shadow: var(--sombraboton);
+}
+
+.flecha:last-child{
+    display: block;
+    margin: auto;
+    border-bottom-left-radius:var(--border-radius);
+    border-bottom-right-radius:var(--border-radius);
+    border-bottom: var(--border-bottom);
+    box-shadow: var(--sombraboton);
+    margin-top: 7%;
+}
+
+.flecha:nth-child(2){
+    display: inline-block;
+    margin-right: 10%;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-left: var(--border-bottom);
+    box-shadow: var(--sombraboton);
+}
+
+.flecha:nth-child(3){
+    display: inline-block;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-right: var(--border-bottom);
+    box-shadow: var(--sombraboton);
+}
+/*
+.
+
+.flechas:nth-child(2){
+    margin-right: 12%;
+}
+
+/*FOOTER*/
+footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    border-top: 2px gray solid;
+}
+
+footer figure img{
+    width: 50%;
+}
+
+footer figure{
+    text-align: right;
+}
+
+
+
